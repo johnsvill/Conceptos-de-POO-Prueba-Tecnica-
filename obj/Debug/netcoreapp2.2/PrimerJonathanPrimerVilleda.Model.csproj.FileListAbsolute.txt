@@ -1,0 +1,4 @@
+C:\Users\Jonathan Villeda\Desktop\FullStack.Net\BackEnd\PrimerJonathanPrimerVilleda.Model\obj\Debug\netcoreapp2.2\PrimerJonathanPrimerVilleda.Model.csprojAssemblyReference.cache
+C:\Users\Jonathan Villeda\Desktop\FullStack.Net\BackEnd\PrimerJonathanPrimerVilleda.Model\obj\Debug\netcoreapp2.2\PrimerJonathanPrimerVilleda.Model.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan Villeda\Desktop\FullStack.Net\BackEnd\PrimerJonathanPrimerVilleda.Model\obj\Debug\netcoreapp2.2\PrimerJonathanPrimerVilleda.Model.AssemblyInfoInputs.cache
+C:\Users\Jonathan Villeda\Desktop\FullStack.Net\BackEnd\PrimerJonathanPrimerVilleda.Model\obj\Debug\netcoreapp2.2\PrimerJonathanPrimerVilleda.Model.AssemblyInfo.cs
