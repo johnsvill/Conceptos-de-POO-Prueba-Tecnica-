@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System;
-namespace PrimerJonathanPrimerVilleda.Model
+using JonathanVilleda.Interfaz;
+namespace JonathanVilleda.Model
 {
-    public class Submarino : Vehiculo
+    public abstract class Submarino : Vehiculo, IBitacora
     {
         private float profundidadMaxima;
         public float ProfundidadMaxima
@@ -18,8 +19,20 @@ namespace PrimerJonathanPrimerVilleda.Model
         {
             
         }
+        public override void Encender()//Viene de la clase Vehiculo
+        {
+
+        }
+        public override void Apagar()//Viene de la clase Vehiculo
+        {
+
+        }
           public Submarino(string modelo, string marca, float profundidadMaxima) =>
            (base.Modelo, base.Marca, base.ProfundidadMaxima) =
             (modelo,marca,profundidadMaxima);
     }
+    public override void MostrarDetalle()
+        {
+              this.ToString();
+        }
 }

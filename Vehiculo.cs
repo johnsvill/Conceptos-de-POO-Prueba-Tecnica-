@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System;
 using static System.Console;
-namespace PrimerJonathanPrimerVilleda.Model
+namespace JonathanVilleda.Model
 {
-    public class Vehiculo
+    public abstract class Vehiculo
     {
         private float velocidadMaxima;
         private float velocidadMinima;
@@ -33,42 +33,7 @@ namespace PrimerJonathanPrimerVilleda.Model
         {
 
         }
-        public void Encender()
-        {
-
-        }
-        public void Apagar()
-        {
-
-        }
-        public void MostrarOpciones()
-        {
-            int opcionMenu = 100;
-            do
-            {
-                WriteLine("1. Crear objeto Avión: ");
-                WriteLine("2. Crear objeto Submarino: ");
-                WriteLine("3. Mostar información de los aviones: ");
-                WriteLine("4. Mostrar información de los submarinos: ");
-                WriteLine("5. Salir");
-                WriteLine("Ingrese su opción===>");
-                if (opcionMenu == 1)
-                {
-                    CrearAvion(opcionMenu);
-                }
-                else if (opcionMenu == 2)
-                {
-                    CrearSubmarino(opcionMenu);
-                }
-                else if (opcionMenu == 3)
-                {
-                    Avion(opcionMenu);
-                }
-                else if (opcionMenu == 4)
-                {
-                    Submarino(opcionMenu);
-                }
-            } while (opcionMenu != 0);
-        }
+        public abstract void Encender();//Se hace referencia en la clase Avión y Submarino       
+        public abstract void Apagar();//Se hace referencia en la clase Avión y Submarino     
     }
 }

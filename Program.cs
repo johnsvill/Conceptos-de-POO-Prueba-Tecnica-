@@ -1,16 +1,15 @@
 ﻿using System;
-using static System.Console;
+using JonathanVilleda.Interfaz;
 using System.Collections.Generic;
 
-namespace PrimerJonathanPrimerVilleda.Model
+namespace JonathanVilleda.Model
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Vehiculo menu = new Vehiculo();
+            Menu menu = new Menu();
             menu.MostrarOpciones();
-
         }
     }
 }

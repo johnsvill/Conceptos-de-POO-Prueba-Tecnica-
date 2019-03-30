@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using System;
-namespace PrimerJonathanPrimerVilleda.Model
+using JonathanVilleda.Interfaz;
+namespace JonathanVilleda.Model
 {
-    public class Avion : Vehiculo
+    public abstract class Avion : Vehiculo, IBitacora
     {
         private float alturaMaxima;
         private float alturaMinima;
@@ -13,19 +14,40 @@ namespace PrimerJonathanPrimerVilleda.Model
         }
         public float AlturaMinima
         {
-            get{ return alturaMinima;}
-            set{ alturaMinima = value;}
+            get { return alturaMinima; }
+            set { alturaMinima = value; }
+        }
+        public void Despegar()
+        {
+
+        }
+        public void Aterrizar()
+        {
+
         }
         public void DisminuirAltura(float pie)
         {
 
         }
-        public Avion() : base()
+        public override void Encender()//Viene de la clase Vehiculo
         {
-            
+
         }
-        public Avion(string modelo, string marca, float alturaMaxima, float alturaminima ) =>
+        public override void Apagar()//Viene de la clase Vehiculo
+        {
+
+        }
+        public Avion()
+        {
+
+        }
+        public Avion(string modelo, string marca, float alturaMaxima, float alturaminima) =>
            (base.Modelo, base.Marca, base.AlturaMaxima, base.AlturaMinima) =
-            (modelo,marca,alturaMaxima,AlturaMinima);
+            (modelo, marca, alturaMaxima, AlturaMinima);
+
+        public override void MostrarDetalle()
+        {
+              this.ToString();
+        }
     }
 }
